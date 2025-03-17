@@ -106,5 +106,12 @@ namespace GerenciamentoEscolar
             FrmCursos f = new FrmCursos();
             f.ShowDialog();
         }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmAltSenha f = new FrmAltSenha();
+            f.ShowDialog();
+        }
     }
 }

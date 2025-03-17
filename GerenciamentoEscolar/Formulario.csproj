@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAltSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAltSenha.Designer.cs">
+      <DependentUpon>FrmAltSenha.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAluno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAltSenha.resx">
+      <DependentUpon>FrmAltSenha.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAluno.resx">
       <DependentUpon>FrmAluno.cs</DependentUpon>
     </EmbeddedResource>

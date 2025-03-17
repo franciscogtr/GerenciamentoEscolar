@@ -16,6 +16,7 @@ namespace GerenciamentoEscolar
     {
         ClasseEntidade classeUser = new ClasseEntidade();
         ClasseNegocio classeNegocio = new ClasseNegocio();
+
         public static string usuario_nome;
         public static string id_tipo;
         
@@ -38,7 +39,8 @@ namespace GerenciamentoEscolar
             DataTable dt = new DataTable();
             classeUser.Email = textBoxUsuario.Text;
             classeUser.Pass = textBoxSenha.Text;
-            
+
+
             dt = classeNegocio.N_Login(classeUser);
 
             //classeUser.Tipo = dt.Rows[0][3].ToString();
@@ -47,9 +49,10 @@ namespace GerenciamentoEscolar
             {
                 MessageBox.Show("Bem Vindo " + dt.Rows[0][1].ToString(),
                     "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 usuario_nome = dt.Rows[0][1].ToString();
                 id_tipo = dt.Rows[0][4].ToString();
-                
+
                 this.Hide();
                 f.ShowDialog();
                 Limpar();

@@ -10,6 +10,9 @@ namespace CapaDeEntidade
     public class ClasseEntidade
     {
 
+        public static string Usuario_nome { get; set; }
+        public static string Usuario_senha { get; set; }
+
         public String User { get; set; }
         public String Email { get; set; }
         public String Pass { get; set; }
