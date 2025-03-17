@@ -33,10 +33,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxUsuario = new System.Windows.Forms.TextBox();
             this.textBoxSenha = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -55,6 +55,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Sair";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // buttonEntrar
             // 
@@ -85,9 +86,11 @@
             // 
             // textBoxUsuario
             // 
+            this.textBoxUsuario.Font = new System.Drawing.Font("Leelawadee UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUsuario.ForeColor = System.Drawing.SystemColors.InfoText;
             this.textBoxUsuario.Location = new System.Drawing.Point(352, 132);
             this.textBoxUsuario.Name = "textBoxUsuario";
-            this.textBoxUsuario.Size = new System.Drawing.Size(231, 20);
+            this.textBoxUsuario.Size = new System.Drawing.Size(231, 22);
             this.textBoxUsuario.TabIndex = 4;
             // 
             // textBoxSenha
@@ -96,17 +99,7 @@
             this.textBoxSenha.Name = "textBoxSenha";
             this.textBoxSenha.Size = new System.Drawing.Size(231, 20);
             this.textBoxSenha.TabIndex = 5;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel1.BackgroundImage = global::GerenciamentoEscolar.Properties.Resources.book;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(245, 343);
-            this.panel1.TabIndex = 6;
+            this.textBoxSenha.UseSystemPasswordChar = true;
             // 
             // panel2
             // 
@@ -134,6 +127,17 @@
             this.pictureBox1.Size = new System.Drawing.Size(26, 31);
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.BackgroundImage = global::GerenciamentoEscolar.Properties.Resources.book;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(245, 343);
+            this.panel1.TabIndex = 6;
             // 
             // Login
             // 

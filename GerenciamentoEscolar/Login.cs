@@ -18,8 +18,7 @@ namespace GerenciamentoEscolar
         ClasseNegocio classeNegocio = new ClasseNegocio();
         public static string usuario_nome;
         public static string id_tipo;
-        public static string usuario_geral;
-        public static string usuario_codigo;
+        
 
         FrmPrincipal f = new FrmPrincipal();
 
@@ -37,18 +36,20 @@ namespace GerenciamentoEscolar
         private void buttonEntrar_Click(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            classeUser.User = textBoxUsuario.Text;
+            classeUser.Email = textBoxUsuario.Text;
             classeUser.Pass = textBoxSenha.Text;
+            
             dt = classeNegocio.N_Login(classeUser);
+
+            //classeUser.Tipo = dt.Rows[0][3].ToString();
 
             if (dt.Rows.Count > 0)
             {
                 MessageBox.Show("Bem Vindo " + dt.Rows[0][1].ToString(),
                     "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //usuario_nome = dt.Rows[0][1].ToString();
-                //id_tipo = dt.Rows[0][3].ToString();
-                //usuario_geral = dt.Rows[0][1].ToString();
-                //usuario_codigo = dt.Rows[0][4].ToString();
+                usuario_nome = dt.Rows[0][1].ToString();
+                id_tipo = dt.Rows[0][4].ToString();
+                
                 this.Hide();
                 f.ShowDialog();
                 Limpar();
@@ -60,5 +61,12 @@ namespace GerenciamentoEscolar
                 Limpar();
             }        
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        
     }
 }
