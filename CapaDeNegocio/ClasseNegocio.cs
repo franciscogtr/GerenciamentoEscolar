@@ -38,6 +38,11 @@ namespace CapaDeNegocio
             return classeDados.DBuscarAluno(obje);
         }
 
+        public DataTable N_BuscarDisciplina(ClasseEntidade obje)
+        {
+            return classeDados.DBuscarDisciplina(obje);
+        }
+
         public DataTable N_ListarUsuarios()
         {
             return classeDados.DListarUsuarios();
@@ -58,6 +63,11 @@ namespace CapaDeNegocio
             return classeDados.DListarAlunos();
         }
 
+        public DataTable N_ListarDisciplinas( ClasseEntidade obje)
+        {
+            return classeDados.DListarDisciplinas(obje);
+        }
+
         public String N_CrudUsuario(ClasseEntidade obje)
         {
             return classeDados.DCrudUsuario(obje);
@@ -76,6 +86,11 @@ namespace CapaDeNegocio
         public String N_CrudAluno(ClasseEntidade obje)
         {
             return classeDados.DCrudAluno(obje);
+        }
+
+        public String N_CrudDisciplina(ClasseEntidade obje)
+        {
+            return classeDados.DCrudDisciplina(obje);
         }
 
 

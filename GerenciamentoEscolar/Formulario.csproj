@@ -58,6 +58,30 @@
     <Compile Include="FrmAluno.Designer.cs">
       <DependentUpon>FrmAluno.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAtividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAtividades.Designer.cs">
+      <DependentUpon>FrmAtividades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadastrar.Designer.cs">
+      <DependentUpon>FrmCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDisciplina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDisciplina.Designer.cs">
+      <DependentUpon>FrmDisciplina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNotas.Designer.cs">
+      <DependentUpon>FrmNotas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCursos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +119,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAluno.resx">
       <DependentUpon>FrmAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAtividades.resx">
+      <DependentUpon>FrmAtividades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadastrar.resx">
+      <DependentUpon>FrmCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDisciplina.resx">
+      <DependentUpon>FrmDisciplina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNotas.resx">
+      <DependentUpon>FrmNotas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCursos.resx">
       <DependentUpon>FrmCursos.cs</DependentUpon>

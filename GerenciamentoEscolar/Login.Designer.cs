@@ -92,6 +92,7 @@
             this.textBoxUsuario.Name = "textBoxUsuario";
             this.textBoxUsuario.Size = new System.Drawing.Size(231, 22);
             this.textBoxUsuario.TabIndex = 4;
+            this.textBoxUsuario.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxUsuario_KeyDown);
             // 
             // textBoxSenha
             // 
@@ -100,6 +101,8 @@
             this.textBoxSenha.Size = new System.Drawing.Size(231, 20);
             this.textBoxSenha.TabIndex = 5;
             this.textBoxSenha.UseSystemPasswordChar = true;
+            this.textBoxSenha.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxSenha_KeyDown);
+            this.textBoxSenha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxSenha_KeyPress);
             // 
             // panel2
             // 

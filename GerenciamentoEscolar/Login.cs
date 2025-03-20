@@ -26,6 +26,7 @@ namespace GerenciamentoEscolar
         public Login()
         {
             InitializeComponent();
+            textBoxUsuario.Select();
         }
 
         private void Limpar()
@@ -70,6 +71,27 @@ namespace GerenciamentoEscolar
             Application.Exit();
         }
 
-        
+        private void textBoxSenha_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Return){
+                buttonEntrar_Click(sender, e);
+            }
+        }
+
+        private void textBoxUsuario_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Tab)
+            {
+                textBoxSenha.Select();
+            }
+        }
+
+        private void textBoxSenha_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Tab)
+            {
+                textBoxUsuario.Select();
+            }
+        }
     }
 }

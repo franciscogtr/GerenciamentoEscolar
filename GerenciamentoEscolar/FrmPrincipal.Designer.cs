@@ -37,17 +37,11 @@
             this.labelHora = new System.Windows.Forms.Label();
             this.labelUsuario = new System.Windows.Forms.Label();
             this.labelCadAlunos = new System.Windows.Forms.Label();
-            this.labelCadSalas = new System.Windows.Forms.Label();
-            this.labelCadCursos = new System.Windows.Forms.Label();
-            this.labelCadUsuario = new System.Windows.Forms.Label();
             this.labelAltSenha = new System.Windows.Forms.Label();
             this.labelRelatorios = new System.Windows.Forms.Label();
             this.labelEstatisticas = new System.Windows.Forms.Label();
             this.labelLogout = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -57,20 +51,15 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -158,53 +147,13 @@
             this.labelCadAlunos.AutoSize = true;
             this.labelCadAlunos.BackColor = System.Drawing.SystemColors.Highlight;
             this.labelCadAlunos.Cursor = System.Windows.Forms.Cursors.Default;
-            this.labelCadAlunos.Font = new System.Drawing.Font("Leelawadee UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCadAlunos.Font = new System.Drawing.Font("Leelawadee UI", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCadAlunos.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.labelCadAlunos.Location = new System.Drawing.Point(99, 204);
+            this.labelCadAlunos.Location = new System.Drawing.Point(72, 3);
             this.labelCadAlunos.Name = "labelCadAlunos";
-            this.labelCadAlunos.Size = new System.Drawing.Size(112, 15);
+            this.labelCadAlunos.Size = new System.Drawing.Size(172, 46);
             this.labelCadAlunos.TabIndex = 10;
-            this.labelCadAlunos.Text = "Cadastro de Alunos";
-            // 
-            // labelCadSalas
-            // 
-            this.labelCadSalas.AutoSize = true;
-            this.labelCadSalas.BackColor = System.Drawing.SystemColors.Highlight;
-            this.labelCadSalas.Cursor = System.Windows.Forms.Cursors.Default;
-            this.labelCadSalas.Font = new System.Drawing.Font("Leelawadee UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCadSalas.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.labelCadSalas.Location = new System.Drawing.Point(261, 205);
-            this.labelCadSalas.Name = "labelCadSalas";
-            this.labelCadSalas.Size = new System.Drawing.Size(116, 15);
-            this.labelCadSalas.TabIndex = 11;
-            this.labelCadSalas.Text = "Cadastro de Turmas";
-            // 
-            // labelCadCursos
-            // 
-            this.labelCadCursos.AutoSize = true;
-            this.labelCadCursos.BackColor = System.Drawing.SystemColors.Highlight;
-            this.labelCadCursos.Cursor = System.Windows.Forms.Cursors.Default;
-            this.labelCadCursos.Font = new System.Drawing.Font("Leelawadee UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCadCursos.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.labelCadCursos.Location = new System.Drawing.Point(433, 205);
-            this.labelCadCursos.Name = "labelCadCursos";
-            this.labelCadCursos.Size = new System.Drawing.Size(111, 15);
-            this.labelCadCursos.TabIndex = 12;
-            this.labelCadCursos.Text = "Cadastro de Cursos";
-            // 
-            // labelCadUsuario
-            // 
-            this.labelCadUsuario.AutoSize = true;
-            this.labelCadUsuario.BackColor = System.Drawing.SystemColors.Highlight;
-            this.labelCadUsuario.Cursor = System.Windows.Forms.Cursors.Default;
-            this.labelCadUsuario.Font = new System.Drawing.Font("Leelawadee UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCadUsuario.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.labelCadUsuario.Location = new System.Drawing.Point(598, 205);
-            this.labelCadUsuario.Name = "labelCadUsuario";
-            this.labelCadUsuario.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelCadUsuario.Size = new System.Drawing.Size(117, 15);
-            this.labelCadUsuario.TabIndex = 13;
-            this.labelCadUsuario.Text = "Cadastro de Usuario";
+            this.labelCadAlunos.Text = "Cadastrar";
             // 
             // labelAltSenha
             // 
@@ -213,7 +162,7 @@
             this.labelAltSenha.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelAltSenha.Font = new System.Drawing.Font("Leelawadee UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAltSenha.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.labelAltSenha.Location = new System.Drawing.Point(113, 407);
+            this.labelAltSenha.Location = new System.Drawing.Point(443, 389);
             this.labelAltSenha.Name = "labelAltSenha";
             this.labelAltSenha.Size = new System.Drawing.Size(83, 15);
             this.labelAltSenha.TabIndex = 14;
@@ -226,7 +175,7 @@
             this.labelRelatorios.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelRelatorios.Font = new System.Drawing.Font("Leelawadee UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRelatorios.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.labelRelatorios.Location = new System.Drawing.Point(285, 407);
+            this.labelRelatorios.Location = new System.Drawing.Point(617, 210);
             this.labelRelatorios.Name = "labelRelatorios";
             this.labelRelatorios.Size = new System.Drawing.Size(65, 15);
             this.labelRelatorios.TabIndex = 15;
@@ -239,7 +188,7 @@
             this.labelEstatisticas.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelEstatisticas.Font = new System.Drawing.Font("Leelawadee UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEstatisticas.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.labelEstatisticas.Location = new System.Drawing.Point(447, 407);
+            this.labelEstatisticas.Location = new System.Drawing.Point(446, 210);
             this.labelEstatisticas.Name = "labelEstatisticas";
             this.labelEstatisticas.Size = new System.Drawing.Size(78, 15);
             this.labelEstatisticas.TabIndex = 16;
@@ -252,7 +201,7 @@
             this.labelLogout.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelLogout.Font = new System.Drawing.Font("Leelawadee UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLogout.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.labelLogout.Location = new System.Drawing.Point(632, 407);
+            this.labelLogout.Location = new System.Drawing.Point(626, 389);
             this.labelLogout.Name = "labelLogout";
             this.labelLogout.Size = new System.Drawing.Size(46, 15);
             this.labelLogout.TabIndex = 17;
@@ -261,44 +210,18 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel3.Controls.Add(this.labelCadAlunos);
             this.panel3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel3.Location = new System.Drawing.Point(88, 202);
+            this.panel3.Location = new System.Drawing.Point(73, 358);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(138, 22);
+            this.panel3.Size = new System.Drawing.Size(316, 54);
             this.panel3.TabIndex = 18;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel4.Location = new System.Drawing.Point(249, 202);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(138, 22);
-            this.panel4.TabIndex = 19;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel5.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel5.Location = new System.Drawing.Point(419, 202);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(138, 22);
-            this.panel5.TabIndex = 20;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel6.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel6.Location = new System.Drawing.Point(587, 202);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(138, 22);
-            this.panel6.TabIndex = 21;
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.SystemColors.Highlight;
             this.panel7.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel7.Location = new System.Drawing.Point(88, 404);
+            this.panel7.Location = new System.Drawing.Point(418, 386);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(138, 22);
             this.panel7.TabIndex = 22;
@@ -307,7 +230,7 @@
             // 
             this.panel8.BackColor = System.Drawing.SystemColors.Highlight;
             this.panel8.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel8.Location = new System.Drawing.Point(249, 404);
+            this.panel8.Location = new System.Drawing.Point(581, 207);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(138, 22);
             this.panel8.TabIndex = 23;
@@ -316,7 +239,7 @@
             // 
             this.panel9.BackColor = System.Drawing.SystemColors.Highlight;
             this.panel9.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel9.Location = new System.Drawing.Point(419, 404);
+            this.panel9.Location = new System.Drawing.Point(418, 207);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(138, 22);
             this.panel9.TabIndex = 24;
@@ -325,7 +248,7 @@
             // 
             this.panel10.BackColor = System.Drawing.SystemColors.Highlight;
             this.panel10.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel10.Location = new System.Drawing.Point(587, 404);
+            this.panel10.Location = new System.Drawing.Point(581, 386);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(138, 22);
             this.panel10.TabIndex = 25;
@@ -341,7 +264,7 @@
             this.pictureBox5.BackgroundImage = global::GerenciamentoEscolar.Properties.Resources.logout;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox5.Location = new System.Drawing.Point(587, 270);
+            this.pictureBox5.Location = new System.Drawing.Point(581, 252);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(138, 134);
             this.pictureBox5.TabIndex = 7;
@@ -354,11 +277,12 @@
             this.pictureBox6.BackgroundImage = global::GerenciamentoEscolar.Properties.Resources.bar_chart;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox6.Location = new System.Drawing.Point(419, 270);
+            this.pictureBox6.Location = new System.Drawing.Point(418, 73);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(138, 134);
             this.pictureBox6.TabIndex = 6;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // pictureBox7
             // 
@@ -366,7 +290,7 @@
             this.pictureBox7.BackgroundImage = global::GerenciamentoEscolar.Properties.Resources.report;
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox7.Location = new System.Drawing.Point(249, 270);
+            this.pictureBox7.Location = new System.Drawing.Point(581, 73);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(138, 134);
             this.pictureBox7.TabIndex = 5;
@@ -378,52 +302,12 @@
             this.pictureBox8.BackgroundImage = global::GerenciamentoEscolar.Properties.Resources.lockblue;
             this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox8.Location = new System.Drawing.Point(88, 270);
+            this.pictureBox8.Location = new System.Drawing.Point(418, 252);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(138, 134);
             this.pictureBox8.TabIndex = 4;
             this.pictureBox8.TabStop = false;
             this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pictureBox4.BackgroundImage = global::GerenciamentoEscolar.Properties.Resources.userblue;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Location = new System.Drawing.Point(587, 73);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(138, 128);
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pictureBox3.BackgroundImage = global::GerenciamentoEscolar.Properties.Resources.bookblue;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Location = new System.Drawing.Point(419, 73);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(138, 128);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pictureBox2.BackgroundImage = global::GerenciamentoEscolar.Properties.Resources.classroom;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Location = new System.Drawing.Point(249, 73);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(138, 128);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -431,9 +315,9 @@
             this.pictureBox1.BackgroundImage = global::GerenciamentoEscolar.Properties.Resources.student;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(88, 73);
+            this.pictureBox1.Location = new System.Drawing.Point(73, 76);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(138, 128);
+            this.pictureBox1.Size = new System.Drawing.Size(316, 313);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -443,32 +327,22 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 497);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.labelLogout);
             this.Controls.Add(this.labelEstatisticas);
             this.Controls.Add(this.labelRelatorios);
             this.Controls.Add(this.labelAltSenha);
-            this.Controls.Add(this.labelCadUsuario);
-            this.Controls.Add(this.labelCadCursos);
-            this.Controls.Add(this.labelCadSalas);
-            this.Controls.Add(this.labelCadAlunos);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -478,13 +352,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -494,9 +367,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
@@ -509,17 +379,11 @@
         private System.Windows.Forms.Label labelUsuario;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Label labelCadAlunos;
-        private System.Windows.Forms.Label labelCadSalas;
-        private System.Windows.Forms.Label labelCadCursos;
-        private System.Windows.Forms.Label labelCadUsuario;
         private System.Windows.Forms.Label labelAltSenha;
         private System.Windows.Forms.Label labelRelatorios;
         private System.Windows.Forms.Label labelEstatisticas;
         private System.Windows.Forms.Label labelLogout;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;

@@ -32,6 +32,9 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonLimpar = new System.Windows.Forms.Button();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
+            this.labelEmail = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -45,9 +48,6 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBoxEmail = new System.Windows.Forms.TextBox();
-            this.labelEmail = new System.Windows.Forms.Label();
-            this.buttonLimpar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -107,6 +107,39 @@
             this.groupBox1.Size = new System.Drawing.Size(460, 173);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
+            // 
+            // buttonLimpar
+            // 
+            this.buttonLimpar.BackColor = System.Drawing.SystemColors.Highlight;
+            this.buttonLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonLimpar.FlatAppearance.BorderSize = 0;
+            this.buttonLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLimpar.Font = new System.Drawing.Font("Leelawadee UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLimpar.ForeColor = System.Drawing.Color.White;
+            this.buttonLimpar.Location = new System.Drawing.Point(326, 130);
+            this.buttonLimpar.Name = "buttonLimpar";
+            this.buttonLimpar.Size = new System.Drawing.Size(92, 29);
+            this.buttonLimpar.TabIndex = 13;
+            this.buttonLimpar.Text = "Limpar";
+            this.buttonLimpar.UseVisualStyleBackColor = false;
+            this.buttonLimpar.Click += new System.EventHandler(this.buttonLimpar_Click);
+            // 
+            // textBoxEmail
+            // 
+            this.textBoxEmail.Location = new System.Drawing.Point(91, 102);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(163, 20);
+            this.textBoxEmail.TabIndex = 12;
+            // 
+            // labelEmail
+            // 
+            this.labelEmail.AutoSize = true;
+            this.labelEmail.Font = new System.Drawing.Font("Leelawadee UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEmail.Location = new System.Drawing.Point(36, 101);
+            this.labelEmail.Name = "labelEmail";
+            this.labelEmail.Size = new System.Drawing.Size(51, 20);
+            this.labelEmail.TabIndex = 11;
+            this.labelEmail.Text = "Email:";
             // 
             // button3
             // 
@@ -254,39 +287,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(460, 181);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // textBoxEmail
-            // 
-            this.textBoxEmail.Location = new System.Drawing.Point(91, 102);
-            this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(163, 20);
-            this.textBoxEmail.TabIndex = 12;
-            // 
-            // labelEmail
-            // 
-            this.labelEmail.AutoSize = true;
-            this.labelEmail.Font = new System.Drawing.Font("Leelawadee UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEmail.Location = new System.Drawing.Point(36, 101);
-            this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(51, 20);
-            this.labelEmail.TabIndex = 11;
-            this.labelEmail.Text = "Email:";
-            // 
-            // buttonLimpar
-            // 
-            this.buttonLimpar.BackColor = System.Drawing.SystemColors.Highlight;
-            this.buttonLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonLimpar.FlatAppearance.BorderSize = 0;
-            this.buttonLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLimpar.Font = new System.Drawing.Font("Leelawadee UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLimpar.ForeColor = System.Drawing.Color.White;
-            this.buttonLimpar.Location = new System.Drawing.Point(326, 130);
-            this.buttonLimpar.Name = "buttonLimpar";
-            this.buttonLimpar.Size = new System.Drawing.Size(92, 29);
-            this.buttonLimpar.TabIndex = 13;
-            this.buttonLimpar.Text = "Limpar";
-            this.buttonLimpar.UseVisualStyleBackColor = false;
-            this.buttonLimpar.Click += new System.EventHandler(this.buttonLimpar_Click);
             // 
             // FrmUsuario
             // 

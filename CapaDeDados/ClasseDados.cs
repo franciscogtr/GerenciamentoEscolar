@@ -79,6 +79,17 @@ namespace CapaDeDados
             return dt;
         }
 
+        public DataTable DBuscarDisciplina(ClasseEntidade obje)
+        {
+            SqlCommand cmd = new SqlCommand("sp_buscar_disciplina", con);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@nome", obje.Disciplina);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
         public DataTable DListarUsuarios()
         {
             SqlCommand cmd = new SqlCommand("sp_listar_usuario", con);
@@ -115,6 +126,19 @@ namespace CapaDeDados
         {
             SqlCommand cmd = new SqlCommand("sp_listar_aluno", con);
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+        public DataTable DListarDisciplinas(ClasseEntidade obje)
+        {
+            SqlCommand cmd = new SqlCommand("sp_listar_disciplinas", con);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("@curso", obje.Curso);
+           
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -196,6 +220,24 @@ namespace CapaDeDados
             cmd.Parameters.AddWithValue("@matricula", obje.Matricula);
             cmd.Parameters.AddWithValue("@curso", obje.Curso);
             cmd.Parameters.AddWithValue("@turma", obje.Turma);
+            cmd.Parameters.Add("@action", SqlDbType.VarChar, 10).Value = obje.Action;
+            cmd.Parameters["@action"].Direction = ParameterDirection.InputOutput;
+            if (con.State == ConnectionState.Open) con.Close();
+            con.Open();
+            cmd.ExecuteNonQuery();
+            action = cmd.Parameters["@action"].Value.ToString();
+            con.Close();
+            return action;
+        }
+
+        public String DCrudDisciplina(ClasseEntidade obje)
+        {
+            string action = "";
+            SqlCommand cmd = new SqlCommand("sp_crud_disciplina", con);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@id", obje.Id);
+            cmd.Parameters.AddWithValue("@nome", obje.Disciplina);
+            cmd.Parameters.AddWithValue("@curso", obje.Curso);
             cmd.Parameters.Add("@action", SqlDbType.VarChar, 10).Value = obje.Action;
             cmd.Parameters["@action"].Direction = ParameterDirection.InputOutput;
             if (con.State == ConnectionState.Open) con.Close();

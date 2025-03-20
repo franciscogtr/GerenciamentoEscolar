@@ -26,6 +26,7 @@ namespace CapaDeEntidade
         public String Matricula { get; set; }
         public String Turma { get; set; }
         public String Tel { get; set; }
+        public String Disciplina { get; set; }
 
 
 

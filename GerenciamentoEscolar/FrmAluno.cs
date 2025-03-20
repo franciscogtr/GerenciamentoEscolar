@@ -25,7 +25,7 @@ namespace GerenciamentoEscolar
         private void pictureBox9_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmPrincipal f = new FrmPrincipal();
+            FrmCadastrar f = new FrmCadastrar();
             f.ShowDialog();
         }
 
