@@ -99,5 +99,12 @@ namespace GerenciamentoEscolar
             this.Hide();
             f.Show();
         }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmAtividades f = new FrmAtividades();
+            f.Show();
+        }
     }
 }

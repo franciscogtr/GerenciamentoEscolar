@@ -10,8 +10,7 @@ namespace CapaDeEntidade
     public class ClasseEntidade
     {
 
-        public static string Usuario_nome { get; set; }
-        public static string Usuario_senha { get; set; }
+       
 
         public String User { get; set; }
         public String Email { get; set; }
@@ -27,6 +26,7 @@ namespace CapaDeEntidade
         public String Turma { get; set; }
         public String Tel { get; set; }
         public String Disciplina { get; set; }
+        public String Atividade { get; set; }
 
 
 

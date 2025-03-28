@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaDeEntidade;
@@ -32,7 +33,7 @@ namespace GerenciamentoEscolar
         private void cboCurso_SelectedIndexChanged(object sender, EventArgs e)
         {
             clsEntidade.Curso = cboCurso.Text;
-            dgvDisciplina.DataSource = clsNegocio.N_ListarDisciplinas(clsEntidade);
+            dgvDisciplina.DataSource = clsNegocio.N_ListarDisciplinas();
         }
 
         void Limpar()
@@ -61,7 +62,7 @@ namespace GerenciamentoEscolar
             }
 
             MessageBox.Show(clsNegocio.N_CrudDisciplina(clsEntidade));
-            dgvDisciplina.DataSource = clsNegocio.N_ListarDisciplinas(clsEntidade);
+            dgvDisciplina.DataSource = clsNegocio.N_ListarDisciplinas();
             Limpar();
         }
 
@@ -86,7 +87,7 @@ namespace GerenciamentoEscolar
             {
                 CRUD("1");
                 clsEntidade.Curso = cboCurso.Text;
-                dgvDisciplina.DataSource = clsNegocio.N_ListarDisciplinas(clsEntidade);
+                dgvDisciplina.DataSource = clsNegocio.N_ListarDisciplinas();
             }
         }
 
@@ -96,7 +97,7 @@ namespace GerenciamentoEscolar
             {
                 CRUD("2");
                 clsEntidade.Curso = cboCurso.Text;
-                dgvDisciplina.DataSource = clsNegocio.N_ListarDisciplinas(clsEntidade);
+                dgvDisciplina.DataSource = clsNegocio.N_ListarDisciplinas();
 
             }
         }
@@ -107,7 +108,7 @@ namespace GerenciamentoEscolar
             {
                 CRUD("3");
                 clsEntidade.Curso = cboCurso.Text;
-                dgvDisciplina.DataSource = clsNegocio.N_ListarDisciplinas(clsEntidade);
+                dgvDisciplina.DataSource = clsNegocio.N_ListarDisciplinas();
             }
         }
 
@@ -121,6 +122,7 @@ namespace GerenciamentoEscolar
             cboCurso.DataSource = clsNegocio.N_ListarCursos();
             cboCurso.DisplayMember = "curso";
             cboCurso.ValueMember = "nome_curso";
+            cboCurso.Text = "";
         }
     }
 }

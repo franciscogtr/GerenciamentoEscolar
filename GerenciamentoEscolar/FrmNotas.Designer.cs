@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvNotas = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtNota = new System.Windows.Forms.TextBox();
+            this.lblNota = new System.Windows.Forms.Label();
             this.textBoxNome = new System.Windows.Forms.TextBox();
             this.labelNome = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -43,25 +45,23 @@
             this.lblAtv = new System.Windows.Forms.Label();
             this.cboTurma = new System.Windows.Forms.ComboBox();
             this.lblTipo = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lblNota = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNotas)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvNotas
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(26, 255);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(460, 181);
-            this.dataGridView1.TabIndex = 6;
+            this.dgvNotas.AllowUserToAddRows = false;
+            this.dgvNotas.AllowUserToDeleteRows = false;
+            this.dgvNotas.BackgroundColor = System.Drawing.Color.White;
+            this.dgvNotas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNotas.Location = new System.Drawing.Point(26, 255);
+            this.dgvNotas.Name = "dgvNotas";
+            this.dgvNotas.ReadOnly = true;
+            this.dgvNotas.Size = new System.Drawing.Size(460, 181);
+            this.dgvNotas.TabIndex = 6;
             // 
             // label3
             // 
@@ -98,7 +98,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtNota);
             this.groupBox1.Controls.Add(this.lblNota);
             this.groupBox1.Controls.Add(this.textBoxNome);
             this.groupBox1.Controls.Add(this.labelNome);
@@ -115,6 +115,23 @@
             this.groupBox1.Size = new System.Drawing.Size(460, 181);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
+            // 
+            // txtNota
+            // 
+            this.txtNota.Location = new System.Drawing.Point(73, 148);
+            this.txtNota.Name = "txtNota";
+            this.txtNota.Size = new System.Drawing.Size(194, 20);
+            this.txtNota.TabIndex = 24;
+            // 
+            // lblNota
+            // 
+            this.lblNota.AutoSize = true;
+            this.lblNota.Font = new System.Drawing.Font("Leelawadee UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNota.Location = new System.Drawing.Point(22, 146);
+            this.lblNota.Name = "lblNota";
+            this.lblNota.Size = new System.Drawing.Size(48, 20);
+            this.lblNota.TabIndex = 23;
+            this.lblNota.Text = "Nota:";
             // 
             // textBoxNome
             // 
@@ -229,36 +246,20 @@
             this.lblTipo.TabIndex = 14;
             this.lblTipo.Text = "Turma:";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(73, 148);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 20);
-            this.textBox1.TabIndex = 24;
-            // 
-            // lblNota
-            // 
-            this.lblNota.AutoSize = true;
-            this.lblNota.Font = new System.Drawing.Font("Leelawadee UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNota.Location = new System.Drawing.Point(22, 146);
-            this.lblNota.Name = "lblNota";
-            this.lblNota.Size = new System.Drawing.Size(48, 20);
-            this.lblNota.TabIndex = 23;
-            this.lblNota.Text = "Nota:";
-            // 
             // FrmNotas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(507, 460);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvNotas);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmNotas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAtividades";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FrmNotas_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNotas)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
@@ -269,7 +270,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvNotas;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox9;
@@ -284,7 +285,7 @@
         private System.Windows.Forms.Label lblCurso;
         private System.Windows.Forms.TextBox textBoxNome;
         private System.Windows.Forms.Label labelNome;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNota;
         private System.Windows.Forms.Label lblNota;
     }
 }
