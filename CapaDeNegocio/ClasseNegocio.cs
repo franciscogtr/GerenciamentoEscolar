@@ -71,6 +71,10 @@ namespace CapaDeNegocio
         {
             return classeDados.DListarAtividades();
         }
+        public DataTable N_ListarNotas()
+        {
+            return classeDados.DListarNotas();
+        }
 
         public String N_CrudUsuario(ClasseEntidade obje)
         {
@@ -100,6 +104,11 @@ namespace CapaDeNegocio
         public String N_CrudAtividade(ClasseEntidade obje)
         {
             return classeDados.DCrudAtividade(obje);
+        }
+
+        public String N_CrudNota(ClasseEntidade obje)
+        {
+            return classeDados.DCrudNota(obje);
         }
     }
 }

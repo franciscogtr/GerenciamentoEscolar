@@ -28,6 +28,8 @@ namespace CapaDeEntidade
         public String Disciplina { get; set; }
         public String Atividade { get; set; }
 
+        public String Nota { get; set; }
+
 
 
 
